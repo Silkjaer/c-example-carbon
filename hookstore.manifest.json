@@ -1,0 +1,36 @@
+{
+  "manifestVersion": "1",
+  "name": "carbon",
+  "version": "1.0.0",
+  "description": "Carbon hook sends a percentage of outgoing payments to a dedicated account (hardcoded beneficiary)",
+  "publisher": "rThomasoLNAej9QcZV6hDrH7FxfJH7Cft",
+  "repo": "https://github.com/example/carbon-hook",
+  "license": "MIT",
+  "networks": ["xahau-testnet"],
+  "hooks": [
+    {
+      "id": "main",
+      "artifact": {
+        "toolchain": "c-wasm",
+        "source_path": "carbon.c",
+        "build_command": "make clean && make"
+      },
+      "HookNamespace": "00000000000000000000000000000000",
+      "HookOn": ["PAYMENT"],
+      "HookCanEmit": ["PAYMENT"],
+      "HookParameters": []
+    }
+  ],
+  "roles": {
+    "installer": {
+      "description": "The account installing the hook"
+    }
+  },
+  "install": [
+    {
+      "TransactionType": "SetHook",
+      "role": "installer",
+      "hookId": "main"
+    }
+  ]
+}
