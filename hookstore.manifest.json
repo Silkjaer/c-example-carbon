@@ -36,7 +36,15 @@
       "TransactionType": "SetHook",
       "description": "Install the hook",
       "role": "installer",
-      "hookIds": ["main"]
+      "hookIds": [
+        "main"
+      ],
+      "hookFlags": {
+        "main": [
+          "hsfNSDELETE",
+          "hsfOVERRIDE"
+        ]
+      }
     }
   ]
 }
