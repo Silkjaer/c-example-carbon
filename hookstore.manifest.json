@@ -6,7 +6,14 @@
   "publisher": "rThomasoLNAej9QcZV6hDrH7FxfJH7Cft",
   "repo": "https://github.com/example/carbon-hook",
   "license": "MIT",
-  "networks": ["xahau-testnet"],
+  "networks": [
+    "xahau-testnet"
+  ],
+  "roles": {
+    "installer": {
+      "description": "The account installing the hook"
+    }
+  },
   "hooks": [
     {
       "id": "main",
@@ -15,22 +22,21 @@
         "source_path": "carbon.c"
       },
       "HookNamespace": "00000000000000000000000000000000",
-      "HookOn": ["PAYMENT"],
-      "HookCanEmit": ["PAYMENT"],
+      "HookOn": [
+        "PAYMENT"
+      ],
+      "HookCanEmit": [
+        "PAYMENT"
+      ],
       "HookParameters": []
     }
   ],
-  "roles": {
-    "installer": {
-      "description": "The account installing the hook"
-    }
-  },
   "install": [
     {
       "TransactionType": "SetHook",
+      "description": "Install the hook",
       "role": "installer",
-      "hookId": "main",
-      "description": "Install the hook"
+      "hookIds": ["main"]
     }
   ]
 }
