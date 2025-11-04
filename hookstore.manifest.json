@@ -29,7 +29,8 @@
     {
       "TransactionType": "SetHook",
       "role": "installer",
-      "hookId": "main"
+      "hookId": "main",
+      "description": "Install the hook"
     }
   ]
 }
