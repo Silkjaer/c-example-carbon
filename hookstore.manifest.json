@@ -38,13 +38,7 @@
       "role": "installer",
       "hookIds": [
         "main"
-      ],
-      "hookFlags": {
-        "main": [
-          "hsfNSDELETE",
-          "hsfOVERRIDE"
-        ]
-      }
+      ]
     }
   ]
 }
