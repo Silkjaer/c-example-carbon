@@ -11,6 +11,7 @@
   ],
   "roles": {
     "installer": {
+      "label": "Hook installer",
       "description": "The account installing the hook"
     }
   },
