@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Carbon hook sends a percentage of outgoing payments to a dedicated account (hardcoded beneficiary)",
   "publisher": "rThomasoLNAej9QcZV6hDrH7FxfJH7Cft",
-  "repo": "https://github.com/example/carbon-hook",
+  "repo": "https://github.com/Silkjaer/c-example-carbon",
   "license": "MIT",
   "networks": [
     "xahau-testnet"
