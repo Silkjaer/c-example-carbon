@@ -10,6 +10,6 @@ to test:
 - compile carbon.c and deploy it to Alice account
 - set up payment transaction from Alice to Bob
 - open debug stream filtered on Carol
-- run the transaction and see incoming payment
+- run the transaction and see incoming payment 
 
 Other hook changes, such as removing the cbak function (which is included just as an example and not essential to the hook functionality), or fixing the hooks-raddr-conv-pure warning, are left as an exercise for the reader.
